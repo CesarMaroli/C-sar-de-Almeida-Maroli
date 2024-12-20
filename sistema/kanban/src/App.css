@@ -1,0 +1,153 @@
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f7fa;
+  color: #000000;
+  padding: 0;
+}
+
+/* Estilo do Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .header-left h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header .header-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+header .header-right a:hover {
+  color: #e1f5fe;
+}
+
+/* Estilos do Conteúdo Principal */
+.main-content {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Estilos das Páginas */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #003d7a;
+}
+
+/* Estilos de Formulários */
+input[type="text"], input[type="email"] {
+  padding: 10px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Layout do Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  padding: 20px;
+}
+
+header .header-left h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header .header-right {
+  display: flex;
+}
+
+header .header-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+header .header-right a:hover {
+  color: #e1f5fe;
+}
+
+/* Centralização do conteúdo */
+.main-content {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Estilo de links e navegação */
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .header-right {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  header .header-right a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
